@@ -66,11 +66,16 @@
         };
 
         screenshot: screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp S>, <&macro_tap>;
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    label = "SCREENSHOT";
 
-            label = "SCREENSHOT";
+    bindings =
+        <&macro_press &kp LGUI>,
+        <&macro_press &kp LSHFT>,
+        <&macro_tap &kp S>,
+        <&macro_release &kp LSHFT>,
+        <&macro_release &kp LGUI>;
         };
     };
 

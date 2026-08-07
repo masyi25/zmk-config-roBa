@@ -58,11 +58,12 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp S>, <&macro_tap>;
+
+            label = "SCREENSHOT";
         };
     };
 
@@ -123,7 +124,7 @@
 &trans            &trans    &trans    &trans    &trans                                          &trans  &trans    &trans    &trans    &trans
 &mo 5             &mkp MB2  &mkp MB3  &mkp MB1  &to 0     &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 0   &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
 &kp LEFT_SHIFT    &trans    &trans    &trans    &trans    &kp LC(MINUS)        &kp RC(MINUS)    &trans  &trans    &trans    &trans    &trans
-&kp LEFT_CONTROL  &trans    &trans    &mkp MB1  &mkp MB2  &kp PRINTSCREEN      &trans           &trans                                &kp RCTRL
+&kp LEFT_CONTROL  &trans    &trans    &mkp MB1  &mkp MB2  &screenshot          &trans           &trans                                &kp RCTRL
             >;
         };
 

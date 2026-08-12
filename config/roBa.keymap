@@ -4,12 +4,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    flavor = "tap-preferred";
+   flavor = "balanced";
     quick-tap-ms = <0>;
-    tapping-term-ms = <80>;
 };
 
-&lt { tapping-term-ms = <80>; };
+&lt { tapping-term-ms = <150>; };
 
 &trackball {
     automouse-layer = <4>;
@@ -17,7 +16,7 @@
 
     // arrows {
     //     layers = <3>;
-    //     bindings =
+    //     bindings =x
     //         <&kp RIGHT_ARROW>,
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,

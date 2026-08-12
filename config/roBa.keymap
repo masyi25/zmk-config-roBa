@@ -6,7 +6,7 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
- tapping-term-ms = <100>;
+    tapping-term-ms = <100>;
 };
 
 &lt { tapping-term-ms = <100>; };
@@ -72,8 +72,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-            flavor = "tap-preferred";
 
+            flavor = "tap-preferred";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
@@ -102,10 +102,10 @@
 
         NUM {
             bindings = <
-&kp MINUS          &kp N7        &kp N8        &kp N9        &kp PLUS                                             &kp LS(ASTERISK)   &kp LS(N9)     &kp TILDE       &kp CARET        &kp AMPERSAND
-&kp SLASH          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(UNDERSCORE)      &kp LS(MINUS)  &kp EXCLAMATION    &kp LS(N2)     &kp HASH        &kp DOLLAR       &kp PERCENT
-&mt LEFT_SHIFT N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL               &kp QUESTION   &kp RBKT           &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&trans             &trans        &trans        &trans        &trans        &trans                  &kp SEMICOLON  &kp DOUBLE_QUOTES                                                  &kp UNDER
+&kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS                                             &kp LS(ASTERISK)   &kp LS(N9)     &kp TILDE       &kp CARET        &kp AMPERSAND
+&kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(UNDERSCORE)      &kp LS(MINUS)  &kp EXCLAMATION    &kp LS(N2)     &kp HASH        &kp DOLLAR       &kp PERCENT
+&kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL               &kp QUESTION   &kp RBKT           &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&trans     &trans        &trans        &trans        &trans        &trans                  &kp SEMICOLON  &kp DOUBLE_QUOTES                                                  &kp UNDER
             >;
         };
 

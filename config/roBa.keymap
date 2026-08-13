@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-   flavor = "balanced";
+    flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
@@ -65,18 +65,24 @@
             label = "TO_LAYER_0";
         };
 
-screenshot: screenshot {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_press &kp LGUI>,
-        <&macro_press &kp LSHFT>,
-        <&macro_wait_time 20>,
-        <&macro_tap &kp S>,
-        <&macro_wait_time 20>,
-        <&macro_release &kp LSHFT>,
-        <&macro_release &kp LGUI>;
-    label = "SCREENSHOT";
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_wait_time 20>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_release>,
+                <&kp LGUI>;
+
+            label = "SCREENSHOT";
         };
     };
 
@@ -135,10 +141,10 @@ screenshot: screenshot {
 
         MOUSE {
             bindings = <
-&trans            &trans    &trans    &trans    &trans                                          &trans  &trans    &trans    &trans    &trans
-&mo 5             &mkp MB2  &mkp MB3  &mkp MB1  &to 0     &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 0   &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
-&kp LEFT_SHIFT    &trans    &trans    &trans    &trans    &kp LC(MINUS)        &kp RC(MINUS)    &trans  &trans    &trans    &kp DEL   &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &trans    &trans    &mkp MB2  &mkp MB1  &screenshot          &trans           &trans                                &kp RCTRL
+&trans            &trans    &trans    &trans    &trans                                          &trans  &trans    &trans     &trans    &trans
+&mo 5             &mkp MB2  &mkp MB3  &mkp MB1  &to 0     &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 0   &mkp MB1  &mkp MB3   &mkp MB2  &mo 5
+&kp LEFT_SHIFT    &trans    &trans    &trans    &trans    &kp LC(MINUS)        &kp RC(MINUS)    &trans  &trans    &kp RCTRL  &kp DEL   &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &trans    &trans    &mkp MB2  &mkp MB1  &screenshot          &trans           &trans                                 &kp RCTRL
             >;
         };
 

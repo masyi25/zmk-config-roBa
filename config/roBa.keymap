@@ -124,7 +124,7 @@
 &kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS                                    &kp LS(ASTERISK)   &kp LS(N9)     &kp TILDE       &kp CARET        &kp LBKT
 &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp COLON      &kp LS(MINUS)  &kp EXCLAMATION    &kp LS(N2)     &kp HASH        &kp DOLLAR       &kp PERCENT
 &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL      &kp QUESTION   &kp RBKT           &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &mt RIGHT_SHIFT BACKSLASH
-&trans     &trans        &trans        &trans        &trans        &trans         &kp SEMICOLON  &kp DOUBLE_QUOTES                                                  &kp UNDER
+&tog 6     &trans        &trans        &trans        &trans        &trans         &kp SEMICOLON  &kp DOUBLE_QUOTES                                                  &kp UNDER
             >;
         };
 
@@ -154,6 +154,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        ONISHI {
+            bindings = <
+&kp Q             &kp L         &kp U         &kp COMMA       &kp DOT                              &kp F         &kp W         &kp R         &kp Y         &kp P
+&kp E             &kp I         &kp A         &kp O           &kp MINUS   &kp ESC                   &kp K         &kp T         &kp N         &kp S         &kp H  &kp INTERNATIONAL_1
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp SEMICOLON &kp TAB                &kp SINGLE_QUOTE  &kp G      &kp D         &kp M         &kp J  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INTERNATIONAL_4  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE     &kp ENTER                             &kp DELETE
             >;
         };
     };

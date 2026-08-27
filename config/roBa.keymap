@@ -142,7 +142,7 @@
         MOUSE {
             bindings = <
 &trans            &kp LC(Z)  &kp LA(LEFT)  &kp RA(RIGHT)  &trans                                           &trans     &kp RA(RIGHT)  &kp RA(LEFT)  &kp RC(Z)  &trans
-&mo 5             &mkp MB2   &mkp MB3      &mkp MB1       &to 0      &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 0      &mkp MB1       &mkp MB3      &mkp MB2   &mo 5
+&mo 5             &mkp MB2   &mkp MB3      &mkp MB1       &to 0      &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 6      &mkp MB1       &mkp MB3      &mkp MB2   &mo 5
 &kp LEFT_SHIFT    &trans     &trans        &kp LC(C)      &kp LC(V)  &kp LC(MINUS)        &kp RC(MINUS)    &kp RC(V)  &kp RC(C)      &kp RCTRL     &kp DEL    &kp RIGHT_SHIFT
 &kp LEFT_CONTROL  &trans     &trans        &mkp MB2       &mkp MB1   &screenshot          &trans           &trans                                             &kp RCTRL
             >;
@@ -159,10 +159,10 @@
 
         ONISHI {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA       &kp DOT                              &kp F         &kp W         &kp R         &kp Y         &kp P
-&kp E             &kp I         &kp A         &kp O           &kp MINUS   &kp ESC                   &kp K         &kp T         &kp N         &kp S         &kp H  &kp INTERNATIONAL_1
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp SEMICOLON &kp TAB                &kp SINGLE_QUOTE  &kp G      &kp D         &kp M         &kp J  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INTERNATIONAL_4  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE     &kp ENTER                             &kp DELETE
+&kp Q             &kp L         &kp U         &kp COMMA                         &kp DOT                                                                      &kp F      &kp W  &kp R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O                             &kp MINUS               &kp ESC                            &kp K             &kp T      &kp N  &kp S  &kp H  &kp INTERNATIONAL_1
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp SEMICOLON           &kp TAB                            &kp SINGLE_QUOTE  &kp G      &kp D  &kp M  &kp J  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INTERNATIONAL_4  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE     &kp ENTER                       &kp DELETE
             >;
         };
     };

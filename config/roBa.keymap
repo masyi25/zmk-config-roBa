@@ -8,7 +8,7 @@
     quick-tap-ms = <0>;
 };
 
-&lt { tapping-term-ms = <100>; };
+&lt { tapping-term-ms = <80>; };
 
 &trackball {
     automouse-layer = <4>;
@@ -94,7 +94,7 @@
 
             flavor = "tap-preferred";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <80>;
         };
     };
 

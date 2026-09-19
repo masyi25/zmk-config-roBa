@@ -142,7 +142,7 @@
         MOUSE {
             bindings = <
 &trans            &kp LC(Z)     &trans         &trans     &trans                                           &trans     &trans     &trans     &kp RC(Z)  &trans
-&mo 5             &mkp MB2      &mkp MB3       &mkp MB1   &to 0      &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 6      &mkp MB1   &mkp MB3   &mkp MB2   &mo 5
+&mo 5             &mkp MB2      &mkp MB3       &mkp MB1   &to 0      &kp LC(KP_PLUS)      &kp RC(KP_PLUS)  &to 0      &mkp MB1   &mkp MB3   &mkp MB2   &mo 5
 &kp LEFT_SHIFT    &trans        &trans         &kp LC(C)  &kp LC(V)  &kp LC(MINUS)        &kp RC(MINUS)    &kp RC(V)  &kp RC(C)  &kp RCTRL  &kp DEL    &kp RIGHT_SHIFT
 &kp LEFT_CONTROL  &kp LA(LEFT)  &kp LA(RIGHT)  &mkp MB2   &mkp MB1   &screenshot          &trans           &trans                                      &kp RCTRL
             >;
@@ -154,15 +154,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        ONISHI {
-            bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA                         &kp DOT                                                                      &kp F      &kp W  &kp R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                             &kp MINUS               &kp ESC                            &kp MINUS         &kp K      &kp T  &kp N  &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp SEMICOLON           &kp TAB                            &kp SINGLE_QUOTE  &kp G      &kp D  &kp M  &kp J  &mt RIGHT_SHIFT B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INTERNATIONAL_4  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE     &kp ENTER                       &kp DELETE
             >;
         };
     };
